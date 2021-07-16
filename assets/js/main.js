@@ -316,3 +316,70 @@ $(function () {
     // [Zoom Effect on Hovering] Find it in shop-single-product.html
     $(".zoomin").imagezoomsl();
 });
+
+
+
+ //custom js
+if ($(window).width() < 514) {
+    $('stetho-img').removeAttr('margin-left');
+} else {
+    $('stetho-img').attr('margin-left','70px');
+}
+//this is for responsiveness
+$(document).ready(function() {
+    $(window).resize(function() {
+      if ($(this).width() < 728) {
+        $(".downsidexd").css("margin-left", "0px");
+        $(".cla-check").css("margin", "0px 0px 0px 20px");
+      } else {
+        $(".downsidexd").css("margin-left", "56px");
+        $(".cla-check").css("margin", "50px 0px 0px 170px");
+      }
+    });
+  });
+
+//this is for typewriter text
+
+
+  const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["long queues", "and", "waiting time for consultation"];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+  	setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+	if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+
