@@ -1159,7 +1159,7 @@ h6{
 }
 .btn__primary:hover .icon-filled{
     color:#fff;
-    background-color:#213360
+    background-color:#213360;
 }
 .btn__primary.btn__outlined{
     background-color:transparent;
@@ -2242,7 +2242,7 @@ input[type=checkbox],input[type=radio]{
     text-transform:capitalize;
     display:block;
     position:relative;
-    color:#fff;
+    color:rgb(0, 0, 0);
     line-height:100px;
     letter-spacing:.4px;
     padding-right:15px
@@ -7226,6 +7226,7 @@ textarea.form-control{
     border: none;
     padding-top: 35px;
     border-radius: 40px;
+
   }
   
   .dropdown {
@@ -7259,6 +7260,8 @@ textarea.form-control{
 
 }
 .dropbtn p:hover{color: #fff;}
+.regbtnhov:hover
+{color: #fff; }
 
 /*niche wali photu*/
 
