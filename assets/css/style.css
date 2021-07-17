@@ -2242,7 +2242,7 @@ input[type=checkbox],input[type=radio]{
     text-transform:capitalize;
     display:block;
     position:relative;
-    color:#213360;
+    color:#fff;
     line-height:100px;
     letter-spacing:.4px;
     padding-right:15px
