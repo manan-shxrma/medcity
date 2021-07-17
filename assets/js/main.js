@@ -344,10 +344,10 @@ $(document).ready(function() {
   const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["long queues", "and", "waiting time for consultation"];
-const typingDelay = 200;
+const textArray = ["long queues", "waiting time for consultation"];
+const typingDelay = 100;
 const erasingDelay = 100;
-const newTextDelay = 2000; // Delay between current and next text
+const newTextDelay = 500; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
 
