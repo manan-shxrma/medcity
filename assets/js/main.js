@@ -383,3 +383,37 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
+
+
+// get the GPS coordinates
+
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+    
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+    var latitude;
+    var longitude;
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+   latitude=  position.coords.latitude;
+   longitude=position.coords.longitude;
+}
+ 
+
+//........................................
+
+function my_map_add() {
+var myMapCenter = new google.maps.LatLng(latitude, 77.17339009999999);
+var myMapProp = {center:myMapCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("my_map_add"),myMapProp);
+var marker = new google.maps.Marker({position:myMapCenter});
+marker.setMap(map);
+}
