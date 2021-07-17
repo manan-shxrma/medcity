@@ -406,12 +406,13 @@ function showPosition(position) {
    latitude=  position.coords.latitude;
    longitude=position.coords.longitude;
 }
- 
 
-//........................................
+
+
+
 
 function my_map_add() {
-var myMapCenter = new google.maps.LatLng(latitude, 77.17339009999999);
+var myMapCenter = new google.maps.LatLng( $latitude, $longitude);
 var myMapProp = {center:myMapCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
 var map = new google.maps.Map(document.getElementById("my_map_add"),myMapProp);
 var marker = new google.maps.Marker({position:myMapCenter});
