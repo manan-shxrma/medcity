@@ -410,11 +410,40 @@ function showPosition(position) {
 
 
 
+console.log("im working with an api");
+let getdatahere=document.getElementById('getdatahere');
+let contentforapi=document.getElementById('contentforapi');
 
-function my_map_add() {
-var myMapCenter = new google.maps.LatLng( $latitude, $longitude);
-var myMapProp = {center:myMapCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("my_map_add"),myMapProp);
-var marker = new google.maps.Marker({position:myMapCenter});
-marker.setMap(map);
+// function getData(){
+//     url= "man.txt";
+//     fetch(url).then((response)=>{
+//          return response.text();
+//     }).then((data)=>{
+//         console.log(data);
+//     })
+// }
+function getData(){
+    url= "https://api.opencagedata.com/geocode/v1/json?q=${31.1048294}${31.1048294}+LNG&key=6fca4cc04b5d4e9fb51803a736e4c3bd";
+    fetch(url).then((response)=>{
+         return response.json();
+    }).then((data)=>{
+        console.log(data);
+    })
 }
+function postData(){
+    url= "https://api.opencagedata.com/geocode/v1/json?q=${31.1048294}${31.1048294}+LNG&key=6fca4cc04b5d4e9fb51803a736e4c3bd";
+    data='{"name":"test","salary":"123"}'    
+    params={
+        method:'post',
+        headers: {
+            'content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    }
+    fetch(url,params).then((response)=>{
+         return response.json();
+    }).then((data)=>{
+        console.log(data);
+    })
+}
+getData();
