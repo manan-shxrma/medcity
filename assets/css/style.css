@@ -3624,9 +3624,13 @@ input[type=checkbox],input[type=radio]{
     margin-bottom:8px
 }
 .slider .slide__title{
-    font-size:60px;
+    font-size:40px;
     line-height:1.1;
-    margin-bottom:25px
+    margin-bottom:25px;
+margin-top: -3cm;
+    color: #1469d8b0;
+    text-shadow: 2px 2px 5px red;
+    
 }
 .slider .slide__desc{
     color:#283b6a;
@@ -3762,6 +3766,9 @@ input[type=checkbox],input[type=radio]{
         font-weight:400;
         margin-bottom:20px
     }
+}
+.pqr{
+    color: #167074;
 }
 @media (min-width:576px) and (max-width:767px){
     .slider .slide__title{
@@ -7355,7 +7362,7 @@ textarea.form-control{
   .card__title {
     font-size: 1em;
     margin: 0 0 .3em;
-    color: #6A515E;
+    color: #bb578a;
     
   }
   
