@@ -19,7 +19,7 @@ body{
     color:#fff
 }
 a{
-    color:#21cdc0;
+    color:#0e204d;
     -webkit-transition:color .3s ease;
     transition:color .3s ease
 }
@@ -1671,7 +1671,7 @@ input[type=checkbox],input[type=radio]{
     transition:all .4s linear
 }
 .social-icons li a:hover{
-    background-color:#21cdc0
+    background-color:#0e204d
 }
 .social-icons li:last-of-type{
     margin-right:0
@@ -1680,10 +1680,10 @@ input[type=checkbox],input[type=radio]{
     color:#fff
 }
 .social-icons-light li a:hover{
-    color:#21cdc0
+    color:#0e204d
 }
 .social-icons-primary li a{
-    color:#21cdc0
+    color:#0e204d
 }
 .social-icons-primary li a:hover{
     color:#213360
@@ -4348,7 +4348,7 @@ margin-top: -3cm;
     color:#0e204d
 }
 .member .member__info .member__name a:hover{
-    color:#21cdc0
+    color:#0e204d
 }
 .member .member__info .member__job{
     color:#21cdc0;
@@ -4723,7 +4723,7 @@ margin-top: -3cm;
     color:#0e204d
 }
 .post-item .post__title a:hover{
-    color:#21cdc0
+    color:#0e204d
 }
 .post-item .post__meta{
     margin-bottom:14px
@@ -4838,7 +4838,7 @@ margin-top: -3cm;
     color:#fff
 }
 .blog-share .social-icons a:hover{
-    background-color:#21cdc0
+    background-color:#0e204d
 }
 .widget-nav .widget-nav__img{
     position:relative;
@@ -5166,13 +5166,13 @@ margin-top: -3cm;
     border-radius:10px
 }
 .contact-info .boxes-wrapper>[class*=col-]:nth-of-type(1) .contact-box{
-    background-color:#21cdc0
+    background-color:#2e4386
 }
 .contact-info .boxes-wrapper>[class*=col-]:nth-of-type(2) .contact-box{
     background-color:#3851a2
 }
 .contact-info .boxes-wrapper>[class*=col-]:nth-of-type(3) .contact-box{
-    background-color:#2d4990
+    background-color:#2e4386
 }
 .contact-info .contact-box{
     position:relative;
@@ -6771,7 +6771,7 @@ textarea.form-control{
     padding-left:10px
 }
 .product__meta-review a:hover{
-    color:#21cdc0
+    color:#0e204d
 }
 .product__meta-review a:before{
     content:'/';
