@@ -331,9 +331,15 @@ $(document).ready(function() {
       if ($(this).width() < 728) {
         $(".downsidexd").css("margin-left", "0px");
         $(".cla-check").css("margin", "0px 0px 0px 20px");
+        $(".line-below").css("margin-top", "100px");
+        $(".teledoc-img-top").css("margin", "20px 0 0 40px");
+        $(".key-fea-sec").css("padding", " 0 0px 0 0px");
       } else {
         $(".downsidexd").css("margin-left", "56px");
         $(".cla-check").css("margin", "50px 0px 0px 170px");
+        $(".line-below").css("margin-top", "50px");
+        $(".teledoc-img-top").css("margin", "20px 0 0 140px");
+        $(".key-fea-sec").css("padding", " 0 130px 0 130px");
       }
     });
   });
