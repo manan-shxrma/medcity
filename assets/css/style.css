@@ -2250,16 +2250,16 @@ input[type=checkbox],input[type=radio]{
 .navbar .nav__item .nav__item-link:before{
     content:'';
     position:absolute;
-    top:0;
+    top: 80px;
     left:0;
     width:0;
-    height:2px;
-    background-color:#21cdc0;
+    height:3px;
+    background-color:#213360;
     -webkit-transition:.5s ease;
     transition:.5s ease
 }
 .navbar .nav__item .nav__item-link.active,.navbar .nav__item .nav__item-link:hover{
-    color:#21cdc0
+    color:#213360
 }
 .navbar .nav__item .nav__item-link.active:before,.navbar .nav__item .nav__item-link:hover:before{
     width:100%
@@ -2506,7 +2506,8 @@ input[type=checkbox],input[type=radio]{
     line-height:80px!important
 }
 .is-sticky .nav__item .nav__item-link:before{
-    background-color:#21cdc0!important
+    background-color:#213360!important;
+    top: 65px;
 }
 .is-sticky .logo-light{
     display:none
@@ -3499,7 +3500,7 @@ input[type=checkbox],input[type=radio]{
     font-size:18px;
     border-radius:50%;
     color:#fff;
-    background-color:#21cdc0;
+    background-color:#213360;
     overflow:hidden;
     -webkit-transition:all .3s ease-in-out;
     transition:all .3s ease-in-out
@@ -3921,7 +3922,9 @@ input[type=checkbox],input[type=radio]{
     -webkit-box-shadow:0 5px 83px 0 rgba(9,29,62,.08);
     box-shadow:0 5px 83px 0 rgba(9,29,62,.08);
     -webkit-transition:all .3s linear;
-    transition:all .3s linear
+    transition:all .3s linear;
+   
+    
 }
 .feature-item .feature__img{
     position:absolute;
@@ -4102,9 +4105,10 @@ input[type=checkbox],input[type=radio]{
     -webkit-box-shadow:none;
     box-shadow:none;
     margin-bottom:0;
-    margin-right:30px;
+    margin-right:100px;
     text-align:center;
-    background-color:transparent
+    background-color:transparent;
+   
 }
 .features-list .feature-item:last-of-type{
     margin-right:0
@@ -7226,7 +7230,7 @@ textarea.form-control{
     border: none;
     padding-top: 35px;
     border-radius: 40px;
-
+    background-color: #213360 !important;
   }
   
   .dropdown {
@@ -7241,6 +7245,9 @@ textarea.form-control{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    left: 40px;
+    top: 85px;
+    border-radius: 5px;
   }
   
   .dropdown-content a {
@@ -7375,3 +7382,11 @@ textarea.form-control{
     -webkit-line-clamp: 3;
     overflow: hidden;
   }    
+
+  .line-below{
+    top: 15px ;
+    border: 3px solid #213360;
+    border-radius: 40px;
+    background-color: #213360;
+    margin-top: 50px;
+  }
