@@ -3629,7 +3629,7 @@ input[type=checkbox],input[type=radio]{
     margin-bottom:25px;
 margin-top: -3cm;
     color: #1469d8b0;
-    text-shadow: 2px 2px 5px red;
+   
     
 }
 .slider .slide__desc{
@@ -7294,11 +7294,12 @@ textarea.form-control{
   
   .cardofpic {
     position: relative;
-    display: block;
+    display: flex;
     height: 100%;  
     border-radius: calc(var(--curve) * 1px);
     overflow: hidden;
     text-decoration: none;
+    left: 2cm;
   }
   
   .card__image {      
@@ -7322,14 +7323,16 @@ textarea.form-control{
     transform: translateY(0);
   }
   
+  
   .card__header {
     position: relative;
     display: flex;
     align-items: center;
-    gap: 2em;
-    padding: 2em;
+    gap: 4em;
+    padding-left: 2cm;
+    padding-top: 3cm;;
     border-radius: calc(var(--curve) * 1px) 0 0 0;    
-    background-color: var(--surface-color);
+    background-color: grey;
     transform: translateY(-100%);
     transition: .2s ease-in-out;
   }
@@ -7359,7 +7362,7 @@ textarea.form-control{
     border-radius: 50%;      
   }
   
-  .card__title {
+  . {
     font-size: 1em;
     margin: 0 0 .3em;
     color: #bb578a;
@@ -7377,6 +7380,7 @@ textarea.form-control{
   .card__status {
     font-size: .8em;
     color: #D7BDCA;
+    left: 3cm;
   }
   
   .card__description {
