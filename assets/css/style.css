@@ -2994,6 +2994,15 @@ input[type=checkbox],input[type=radio]{
         -webkit-transform:scale(1);
         transform:scale(1)
     }
+    .xyp {
+        margin-left: 10cm;
+        font-size: x-large;
+    }
+    .pqr ul{
+        @media (max-width: 991px)
+
+        color:#213360;
+    }
     .navbar .close-mobile-menu{
         position:absolute;
         top:30px;
