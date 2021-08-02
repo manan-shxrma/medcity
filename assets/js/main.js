@@ -344,6 +344,7 @@ $(document).ready(function() {
         $(".teledoc-img-top").css("margin-left", "40px");
         $("ul.features-list ").css("margin-left", "66px");
         $("card__image ").css("margin-right", "200px");
+        $("app-section ").css("margin-left", "0px");
 
       } else {
         $(".downsidexd").css("margin-left", "56px");
@@ -354,6 +355,7 @@ $(document).ready(function() {
         $(".teledoc-img-top").css("margin-left", "20px");
         $("ul.features-list ").css("margin-left", "250px");
         $("card__image ").css("margin-right", "0px");
+        $("app-section ").css("margin-left", "340px");
       }
     });
   });

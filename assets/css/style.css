@@ -4916,6 +4916,11 @@ margin-top: -3cm;
     -webkit-transition:all .3s linear;
     transition:all .3s linear
 }
+.app-section{
+    color: #213360;
+    margin-left: 340px;
+
+}
 .widget-nav .widget-nav__all{
     font-size:22px;
     line-height:50px;
