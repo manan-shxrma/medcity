@@ -44,6 +44,13 @@ $(function () {
         $('.navbar-collapse').removeClass('menu-opened');
     });
 
+    // <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+    // function closeNav() {
+    //     document.getElementById("mySidebar").style.width = "0";
+    //     document.getElementById("main").style.marginLeft= "0";
+    //   }
+
     /*==========   Sticky Navbar   ==========*/
     $win.on('scroll', function () {
         if ($win.width() >= 992) {
@@ -335,7 +342,8 @@ $(document).ready(function() {
         $(".teledoc-img-top").css("margin", "20px 0 0 40px");
         $(".key-fea-sec").css("padding", " 0 0px 0 0px");
         $(".teledoc-img-top").css("margin-left", "40px");
-        $("ul.features-list ").css("margin-left", "80px");
+        $("ul.features-list ").css("margin-left", "66px");
+        $("card__image ").css("margin-right", "200px");
 
       } else {
         $(".downsidexd").css("margin-left", "56px");
@@ -345,6 +353,7 @@ $(document).ready(function() {
         $(".key-fea-sec").css("padding", " 0 130px 0 130px");
         $(".teledoc-img-top").css("margin-left", "20px");
         $("ul.features-list ").css("margin-left", "250px");
+        $("card__image ").css("margin-right", "0px");
       }
     });
   });
