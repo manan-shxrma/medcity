@@ -4352,10 +4352,12 @@ margin-top: -3cm;
     padding:35px 40px
 }
 .member .member__info .member__name{
+    margin-left: 70px;
     font-size:21px;
     margin-bottom:11px
 }
 .member .member__info .member__name a{
+    
     color:#0e204d
 }
 .member .member__info .member__name a:hover{
@@ -4919,7 +4921,6 @@ margin-top: -3cm;
 .app-section{
     color: #213360;
     margin-left: 340px;
-
 }
 .widget-nav .widget-nav__all{
     font-size:22px;
@@ -7412,9 +7413,18 @@ textarea.form-control{
     background-color: #213360;
     margin-top: 50px;
   }
+  .line-belows{
+    top:7px ;
+    border: 3px solid #213360;
+    border-radius: 40px;
+    background-color: #213360;
+    margin-top: 0px;
+    width: 100%;
+  }
   .teledoc-img-top{
-    margin:20px 0 0 140px;
+    margin:20px 0 -95px 120px;
     width: 400px; 
+    
   }
   .key-fea-sec{
     padding: 0 130px 0 130px;

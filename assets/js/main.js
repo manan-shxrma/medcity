@@ -343,8 +343,8 @@ $(document).ready(function() {
         $(".key-fea-sec").css("padding", " 0 0px 0 0px");
         $(".teledoc-img-top").css("margin-left", "40px");
         $("ul.features-list ").css("margin-left", "66px");
-        $("card__image ").css("margin-right", "200px");
-        $("app-section ").css("margin-left", "0px");
+        $(".card__image ").css("margin-right", "200px");
+        $(".app-section ").css("margin-left", "0px");
 
       } else {
         $(".downsidexd").css("margin-left", "56px");
@@ -354,8 +354,8 @@ $(document).ready(function() {
         $(".key-fea-sec").css("padding", " 0 130px 0 130px");
         $(".teledoc-img-top").css("margin-left", "20px");
         $("ul.features-list ").css("margin-left", "250px");
-        $("card__image ").css("margin-right", "0px");
-        $("app-section ").css("margin-left", "340px");
+        $(".card__image ").css("margin-right", "0px");
+        $(".app-section ").css("margin-left", "340px");
       }
     });
   });
